@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nobel Media Control</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <!-- Projektor controls -->
+        <div class="row">
+            <div class="col">
+                <button type="button" onclick="ProjektorON()" class="btn btn-success btn-lg">Tænd Projektor</button>
+            </div>
+            <div class="col">
+                <button type="button" onclick="ProjektorOFF()" class="btn btn-danger btn-lg">Sluk Projektor</button>
+            </div>
+        </div>
+        <!-- Input Controls -->
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <select id="ForstærkerInputs" class="custom-select custom-select-lg" placeholder="Input...">
+
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" onclick="SkiftInput_EVENT()" class="btn btn-info btn-lg">Skift Input</button>
+            </div>
+        </div>
+        <hr>
+        <!-- Volume Controls -->
+        <input id="Volume" onchange="VolumeChanged_EVENT()" data-slider-id='VolumeSlider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+    </div>
+
+
+</div>
+</body>
+
+<footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="media.js"></script>
+</footer>
+</html>

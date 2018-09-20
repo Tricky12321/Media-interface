@@ -1,0 +1,38 @@
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#VolumeSlider .slider-selection {
+    background: #BABABA;
+}
+
+#VolumeSlider {
+    width: 100%;
+
+}
+
+.slider.slider-horizontal {
+    height: 30px;
+}
+.slider-handle {
+    width: 40px;
+    height: 40px;
+}
+.slider.slider-horizontal .slider-track {
+    height: 20px;
+}
+.slider-track-high,  .slider-track-low{
+    background: #faac1a;
+}
+
+#VolumeSlider .slider-selection {
+    background: #faac1a;
+
+}
